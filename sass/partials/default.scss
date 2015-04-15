@@ -1,0 +1,59 @@
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+body {
+	font-family: $font-stack;
+	color: $primary-color;
+	font-size: px(16);
+	line-height: 140%;
+	margin: 0;
+}
+
+.clearfix {
+	@include clearfix();
+}
+
+a { 
+	@include link-colors(red, green);
+}
+
+
+section {
+	position: relative;
+	background: $section-bg;
+	color: $secondary-color;
+}
+
+section .wrapper,
+footer .wrapper  {
+	@include wrapper();
+	@include transitions();
+	@include wrapper-padding();
+	
+	@include breakpoint(960) { background: blue; }
+	@include breakpoint(600) { background: green; }
+	@include breakpoint(400) { background: red; }
+}
+
+article {
+	padding-left: site-width(460px);
+	
+	@include breakpoint(400) { padding-left: site-width(0px); }
+}
+
+aside {
+	@include absolute(3em, auto, 0, 2em);
+	width: site-width(380px);
+	
+	@include breakpoint(400) { display: none; }
+}
+
+
+
+
+footer ul {
+	@include list-style();
+	float: left;
+	width: calc-width(400px, 1200px);
+}

@@ -1,0 +1,7 @@
+header {
+	background: $header-bg;
+	padding: 4em 1em;
+}
+header .wrapper {
+	@include wrapper();
+}

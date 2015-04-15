@@ -1,0 +1,79 @@
+/*
+ *	A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
+ */
+@mixin clearfix() {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin wrapper() {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin absolute($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}
+
+
+@mixin list-style() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin wrapper-padding() {
+	padding: px(60) px(30);
+}
+
+@mixin transitions() {
+	transition: all ease .2s;
+}
+
+@mixin breakpoint($point) {
+	@if $point == 960 {
+		@media (max-width: px(960)) { @content; }
+	}
+	@else if $point == 600 {
+		@media (max-width: px(600)) { @content; }
+	}
+	@else if $point == 400 {
+		@media (max-width: px(400)) { @content; }
+	}
+}
+
+@mixin link-colors($normal, $hover: false) {
+  color: $normal;
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+}
+
+@mixin button-colors($normal, $hover: false) {
+	background: $normal;
+	@if $hover {
+		&:hover {
+			background: $hover;
+		}
+	}
+}

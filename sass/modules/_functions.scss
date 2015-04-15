@@ -1,0 +1,14 @@
+$baseFontSize: 16;
+@function px($pxval, $base: $baseFontSize) {
+  @return #{$pxval / $base}em;
+}
+
+$defaultWidth: 1200px;
+@function site-width($target, $dw: $defaultWidth) {
+	@return ($target / $dw) * 100%;
+}
+
+@function calc-width($thisWidth, $currentWidth) {
+	@return ($thisWidth / $currentWidth) * 100%;
+}
+

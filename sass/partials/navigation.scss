@@ -1,0 +1,21 @@
+
+nav {
+	ul {
+		@include list-style();
+		@include wrapper();
+		
+		li {
+			float: left;
+			width: 16%;
+			text-align: center;
+		}
+	}
+	
+	a {
+		text-decoration: none;
+		display: block;
+		
+		@include button-colors(#B05F60, #871315);
+	}
+}
+

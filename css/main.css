@@ -1,0 +1,158 @@
+/*
+ *	The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
+ **/
+/* Fonts */
+/* Colours */
+/* Header */
+/* Backgrounds */
+/*
+ *	A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
+ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-size: 1em;
+  line-height: 140%;
+  margin: 0;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: green;
+}
+
+section {
+  position: relative;
+  background: #555;
+  color: #fff;
+}
+
+section .wrapper,
+footer .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  transition: all ease .2s;
+  padding: 3.75em 1.875em;
+}
+@media (max-width: 60em) {
+  section .wrapper,
+  footer .wrapper {
+    background: blue;
+  }
+}
+@media (max-width: 37.5em) {
+  section .wrapper,
+  footer .wrapper {
+    background: green;
+  }
+}
+@media (max-width: 25em) {
+  section .wrapper,
+  footer .wrapper {
+    background: red;
+  }
+}
+
+article {
+  padding-left: 38.33333%;
+}
+@media (max-width: 25em) {
+  article {
+    padding-left: 0%;
+  }
+}
+
+aside {
+  top: 3em;
+  right: auto;
+  bottom: 0;
+  left: 2em;
+  position: absolute;
+  width: 31.66667%;
+}
+@media (max-width: 25em) {
+  aside {
+    display: none;
+  }
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 33.33333%;
+}
+
+h1 {
+  font-size: 1.625em;
+}
+
+h2 {
+  font-size: 1.375em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+header {
+  background: #eee;
+  padding: 4em 1em;
+}
+
+header .wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+nav ul li {
+  float: left;
+  width: 16%;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  background: #B05F60;
+}
+nav a:hover {
+  background: #871315;
+}
