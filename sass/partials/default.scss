@@ -14,11 +14,6 @@ body {
 	@include clearfix();
 }
 
-a { 
-	@include link-colors(red, green);
-}
-
-
 section {
 	position: relative;
 	background: $section-bg;
@@ -51,9 +46,3 @@ aside {
 
 
 
-
-footer ul {
-	@include list-style();
-	float: left;
-	width: calc-width(400px, 1200px);
-}

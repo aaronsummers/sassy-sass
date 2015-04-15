@@ -1,0 +1,5 @@
+footer ul {
+	@include list-style();
+	float: left;
+	width: calc-width(400px, 1200px);
+}
