@@ -1,10 +1,6 @@
 /*
  *	The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file.
  **/
-/* Fonts */
-/* Colours */
-/* Header */
-/* Backgrounds */
 /*
  *	A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
  */
@@ -126,14 +122,19 @@ header .wrapper {
   position: relative;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+nav {
+  background: #bc7778;
+}
+nav .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 nav ul li {
   float: left;
@@ -143,10 +144,22 @@ nav ul li {
 nav a {
   text-decoration: none;
   display: block;
+  padding: 1em 0;
   background: #B05F60;
 }
 nav a:hover {
-  background: #871315;
+  background: #a45152;
+}
+
+footer {
+  background: #222;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
 }
 
 footer ul {

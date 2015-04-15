@@ -1,8 +1,13 @@
 
 nav {
+	background: lighten($nav-bg, 7%);
+	
+	.wrapper {
+		@include wrapper();
+	}
+	
 	ul {
 		@include list-style();
-		@include wrapper();
 		
 		li {
 			float: left;
@@ -14,8 +19,8 @@ nav {
 	a {
 		text-decoration: none;
 		display: block;
-		
-		@include button-colors(#B05F60, #871315);
+		padding: px(16) 0;
+		@include button-colors($nav-bg, $nav-bg-hover);
 	}
 }
 
