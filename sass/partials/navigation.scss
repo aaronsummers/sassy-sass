@@ -20,6 +20,7 @@ nav {
 		text-decoration: none;
 		display: block;
 		padding: px(16) 0;
+		@include shadowinset(.1, .2);
 		@include button-colors($nav-bg, $nav-bg-hover);
 	}
 }
