@@ -1,10 +1,10 @@
 footer {	
 	background: #222;
-	@include clearfix();
+	@extend .clearfix;
 }
 
 footer ul {
 	@include list-style();
 	float: left;
-	width: calc-width(400px, 1200px);
+	width: site-width(400px, 1200px);
 }

@@ -3,9 +3,11 @@
 }
 
 body {
-	font-family: $font-stack;
+	font: {
+			family: $font-stack;
+			size: px(16);
+	}
 	color: $primary-color;
-	font-size: px(16);
 	line-height: 140%;
 	margin: 0;
 }

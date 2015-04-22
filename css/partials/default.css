@@ -8,8 +8,8 @@ Error: Undefined mixin 'box-sizing'.
 3: }
 4: 
 5: body {
-6: 	font-family: $font-stack;
-7: 	color: $primary-color;
+6: 	font: {
+7: 			family: $font-stack;
 
 Backtrace:
 C:\Users\aaron.s\Documents\GitHub\xampp\htdocs\sassy-sass\sass\partials\default.scss:2:in `box-sizing'
@@ -61,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'box-sizing'.\A         on line 2 of C:\Users\aaron.s\Documents\GitHub\xampp\htdocs\sassy-sass\sass\partials\default.scss, in `box-sizing'\A         from line 2 of C:\Users\aaron.s\Documents\GitHub\xampp\htdocs\sassy-sass\sass\partials\default.scss\A \A 1: *, *:before, *:after {\A 2: 	@include box-sizing(border-box);\A 3: }\A 4: \A 5: body {\A 6: 	font-family: $font-stack;\A 7: 	color: $primary-color;"; }
+  content: "Error: Undefined mixin 'box-sizing'.\A         on line 2 of C:\Users\aaron.s\Documents\GitHub\xampp\htdocs\sassy-sass\sass\partials\default.scss, in `box-sizing'\A         from line 2 of C:\Users\aaron.s\Documents\GitHub\xampp\htdocs\sassy-sass\sass\partials\default.scss\A \A 1: *, *:before, *:after {\A 2: 	@include box-sizing(border-box);\A 3: }\A 4: \A 5: body {\A 6: 	font: {\A 7: 			family: $font-stack;"; }

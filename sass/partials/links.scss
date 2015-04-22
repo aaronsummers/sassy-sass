@@ -1,3 +1,4 @@
 a { 
 	@include link-colors(#fff, #ECC72A);
+	@include animate(all ease .2s);
 }

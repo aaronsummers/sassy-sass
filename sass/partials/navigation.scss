@@ -13,6 +13,7 @@ nav {
 			float: left;
 			width: 16%;
 			text-align: center;
+			@include box-shadow(1px, 1px, 1px, #ff6600, $inset: true);
 		}
 	}
 	
@@ -20,7 +21,6 @@ nav {
 		text-decoration: none;
 		display: block;
 		padding: px(16) 0;
-		@include shadowinset(.1, .2);
 		@include button-colors($nav-bg, $nav-bg-hover);
 	}
 }
