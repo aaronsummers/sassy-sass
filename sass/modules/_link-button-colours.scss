@@ -1,0 +1,30 @@
+// SET COLOURS
+
+$nav-bg: #B05F60;
+$nav-bg-hover: darken($nav-bg, 5%);
+
+@mixin button-colors($normal, $hover: false) {
+	background: $normal;
+	@if $hover {
+		&:hover {
+			background: $hover;
+		}
+	}
+}
+
+
+// USE
+
+a {
+	@include button-colors($nav-bg, $nav-bg-hover);
+}
+
+
+// OUTPUT
+
+a {
+  background: #B05F60;
+}
+a:hover {
+  background: #a45152;
+}

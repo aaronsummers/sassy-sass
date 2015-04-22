@@ -1,0 +1,28 @@
+// SET PAGE WIDTH IN PX AND CONVERT TO PERCENTAGE
+
+$defaultWidth: 1200px;
+@function site-width($target, $dw: $defaultWidth) {
+	@return ($target / $dw) * 100%;
+}
+
+
+// USE
+
+aside {
+	width: site-width(380px);
+}
+
+article {
+	padding-left: site-width(460px);
+}
+
+
+// OUTPUT
+
+aside {
+  width: 31.66667%;
+}
+
+article {
+  padding-left: 38.33333%;
+}

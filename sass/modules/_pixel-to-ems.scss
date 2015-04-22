@@ -1,0 +1,18 @@
+// PX to EMs
+
+$baseFontSize: 16;
+@function px($pxval, $base: $baseFontSize) {
+  @return #{$pxval / $base}em;
+}
+
+// USE
+
+body {
+	font-size: px(16);
+}
+
+// OUTPUT
+
+body {
+	font-size: 1em;
+}

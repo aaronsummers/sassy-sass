@@ -20,6 +20,7 @@ section {
 	position: relative;
 	background: $section-bg;
 	color: $secondary-color;
+	@include prefix((border-radius: 5px), webkit moz ms o);
 }
 
 section .wrapper,
